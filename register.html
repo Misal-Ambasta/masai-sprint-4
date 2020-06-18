@@ -12,27 +12,20 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
-
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-			crossorigin="anonymous"
-		/>
 	</head>
 
-	<body>
+	<body id="register_Background">
 		<!-- Nav Tab -->
 		<nav class="nav">
-			<a class="nav-link active" href="index.html">Home</a>
-			<a class="nav-link" href="order.html">Myaccount</a>
-			<a class="nav-link" href="register.html">Register</a>
+			<a class="nav-link active text-secondary" href="index.html">Home</a>
+
+			<a class="nav-link text-secondary" href="register.html">Register</a>
 		</nav>
 		<!-- Registration Box -->
-		<div class="container mt-3">
+		<div class="container mt-3" id="registerBox">
 			<div class="row">
 				<div class="col-12 h2">
-					Add Resturant
+					Add Restaurant
 				</div>
 				<div class="col h4">
 					Basic Details
@@ -43,80 +36,93 @@
 					<form>
 						<div class="form-row">
 							<div class="form-group col-12">
-								<label for="exampleInputEmail1"
-									>Resturtant Name<span class="asterisk">*</span></label
+								<label for="newrestroName"
+									>Restaurant Name<span class="asterisk">*</span></label
 								>
 								<input
-									type="email"
+									type="text"
 									class="form-control"
-									id="exampleInputEmail1"
+									id="newrestroName"
 									aria-describedby="emailHelp"
+									placeholder="Restaurant name"
 								/>
 							</div>
 							<div class="form-group col-md-6">
-								<label for="inputEmail4">Email</label>
+								<label for="newEmail">Email</label>
 								<input
 									type="email"
 									class="form-control"
-									id="inputEmail4"
-									placeholder="Email"
+									id="newEmail"
+									placeholder="abc@gmail.com"
 								/>
 							</div>
 							<div class="form-group col-md-6">
-								<label for="inputmobile">Password</label>
+								<label for="password">Password</label>
 								<input
 									type="password"
 									class="form-control"
-									id="inputmobile"
+									id="password"
 									placeholder="Password"
 								/>
 							</div>
 
 							<div class="form-group col-12">
-								<label for="inputEmail4">Address</label>
+								<label for="address">Address</label>
 								<input
-									type="email"
+									type="text"
 									class="form-control"
-									id="inputEmail4"
+									id="address"
 									placeholder="Address"
 								/>
 							</div>
 
 							<div class="form-group col-md-6">
-								<label for="inputAddress2">Address 2</label>
+								<label for="address2">Address 2</label>
 								<input
 									type="text"
 									class="form-control"
-									id="inputAddress2"
+									id="address2"
 									placeholder="Landmark"
 								/>
 							</div>
 							<div class="form-group col-md-6">
-								<label for="inputmobile">Mobile Number</label>
+								<label for="newmobile">Mobile Number</label>
 								<input
 									type="text"
 									class="form-control"
-									id="inputmobile"
-									placeholder="Mobile Number"
+									id="newmobile"
+									placeholder="10 digit Mobile Number"
 								/>
 							</div>
 						</div>
 
 						<div class="form-row">
 							<div class="form-group col-md-6">
-								<label for="inputCity">City</label>
-								<input type="text" class="form-control" id="inputCity" />
+								<label for="newCity">City</label>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="City"
+									id="newCity"
+								/>
 							</div>
 							<div class="form-group col-md-4">
-								<label for="inputState">State</label>
-								<select id="inputState" class="form-control">
-									<option selected>Choose...</option>
-									<option>...</option>
-								</select>
+								<label for="newState">State</label>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="State"
+									id="newState"
+								/>
 							</div>
 							<div class="form-group col-md-2">
-								<label for="inputZip">Zip</label>
-								<input type="text" class="form-control" id="inputZip" />
+								<label for="newZip">Zip</label>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="6 digit zip code"
+									id="newZip"
+								/>
 							</div>
 						</div>
 						<div class="form-group">
@@ -131,7 +137,7 @@
 								</label>
 							</div>
 						</div>
-						<button type="submit" class="btn btn-primary btn-lg btn-block">
+						<button type="submit" id="addRestro" class="btn btn-lg btn-block">
 							Add Resturant
 						</button>
 					</form>
@@ -139,6 +145,8 @@
 			</div>
 		</div>
 
+		<!-- Summary Part -->
+		<div id="result"></div>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -154,5 +162,6 @@
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
+		<script type="text/javascript" src="register.js"></script>
 	</body>
 </html>
